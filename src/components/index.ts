@@ -1,1 +1,6 @@
 export * from "./App"
+export * from "./Categories"
+export * from "./TrendingNow"
+export * from "./FeaturedVideos"
+export * from "./Content"
+export * from "./AroundTheWeb"

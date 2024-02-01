@@ -1,0 +1,10 @@
+.Trending-Container{
+    background-color: red;
+    width: 80vw;
+    min-height: 20vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

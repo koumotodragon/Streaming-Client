@@ -1,0 +1,10 @@
+.Featured-Container{
+    background-color: rgb(153, 74, 74);
+    width: 80vw;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
