@@ -1,10 +1,12 @@
-.Categories-Container{
-    background-color: blueviolet;
+.Categories-Container {
+    background-color: #FFF;
     width: 80vw;
     min-height: 10vh;
-    font-size: calc(10px + 2vmin);
-    color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: center;   
 }
+
+.example::-webkit-scrollbar {
+    display: none;
+  }
