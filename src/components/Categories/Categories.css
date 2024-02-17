@@ -4,9 +4,9 @@
     min-height: 10vh;
     display: flex;
     justify-content: flex-start;
-    align-items: center;  
+    align-items: center;
 }
 
-.example::-webkit-scrollbar {
+.Categories-Container::-webkit-scrollbar {
     display: none;
-  }
+}
