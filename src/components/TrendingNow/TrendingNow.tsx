@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Video } from "../UI";
 import "./TrendingNow.css";
 
@@ -114,30 +114,53 @@ const data = [
 ];
 
 export const TrendingNow = () => {
+
+  const boxRef = useRef<HTMLDivElement>(null);
+  const btnpressprev = () => {
+    if (boxRef.current) {
+      const width = boxRef.current.clientWidth;
+      boxRef.current.scrollLeft -= width;
+      console.log(width);
+    }
+  }
+
+  const btnpressnext = () => {
+    if (boxRef.current) {
+      const width = boxRef.current.clientWidth;
+      boxRef.current.scrollLeft += width;
+      console.log(width);
+    }
+  }
+
+
   return (
     <div className="Trending-Container">
       <div className="Trending-Header">
         TRENDING
         <span>&nbsp; NOW</span>
       </div>
-
-      <div
-        className="Trending-Videos"
-        style={{
-          overflowX: "scroll",
-          scrollBehavior: "smooth",
-        }}
-      >
-        {data.map((item, index) => {
-          return (
-            <Video
-              img={item.thumbnailUrl}
-              description={item.description}
-              views={item.views}
-              comments={item.id}
-            />
-          );
-        })}
+      <div className="videos-carousel">
+        <div
+          className="Trending-Videos"
+          style={{
+            overflowX: "hidden",
+            scrollBehavior: "smooth",
+          }}
+          ref={boxRef}
+        >
+          {data.map((item, index) => {
+            return (
+              <Video
+                img={item.thumbnailUrl}
+                description={item.description}
+                views={item.views}
+                comments={item.id}
+              />
+            );
+          })}
+        </div>
+        <div className="video-next" onClick={btnpressnext}>next</div>
+        <div className="video-prev" onClick={btnpressprev}>prev</div>
       </div>
     </div>
   );
