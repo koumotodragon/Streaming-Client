@@ -11,8 +11,8 @@ export const Video = (props: any) => {
       </div>
       <div>{description}</div>
       <div className="comments-container">
-        <div>{views}</div> | 
-        <div>{comments}</div>
+        <div className="vedio-view">{views}</div>
+        <div className="vedio-comment">{comments}</div>
       </div>
     </div>
   );
