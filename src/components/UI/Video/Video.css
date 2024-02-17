@@ -4,28 +4,47 @@
   justify-content: flex-start;
   align-items: center;
   font-size: 13.3px;
-  font-family: Arial, Helvetica, sans-serif;
   color: #121212;
   height: 225px;
   width: 212px;
   margin: 1vw;
 }
-
-.rounded-image-container {
-  overflow: hidden; /* Ensure that the rounded corners are visible */
-  width: 212px; /* Set your desired width */
+.video-container .rounded-image-container {
+  overflow: hidden;
+  /* Ensure that the rounded corners are visible */
+  width: 212px;
+  /* Set your desired width */
   height: 125px;
 }
-
-.rounded-image {
+.video-container .rounded-image-container .rounded-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and cover container */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Maintain aspect ratio and cover container */
   border-radius: 10px;
 }
-
-.comments-container {
+.video-container .comments-container {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  gap: 7px;
 }
+.video-container .comments-container .vedio-view::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../../../assets/sprite.png) no-repeat -47px -41px;
+  height: 10px;
+  width: 17px;
+  margin: -1px 3px 0 0;
+}
+.video-container .comments-container .vedio-comment::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../../../assets/sprite.png) no-repeat -47px -54px;
+  height: 10px;
+  width: 11px;
+  margin: -1px 3px 0 0;
+}/*# sourceMappingURL=Video.css.map */
