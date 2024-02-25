@@ -120,7 +120,7 @@ export const TrendingNow = () => {
     if (boxRef.current) {
       const width = boxRef.current.clientWidth;
       boxRef.current.scrollLeft -= width;
-      console.log(width);
+
     }
   }
 
@@ -128,7 +128,7 @@ export const TrendingNow = () => {
     if (boxRef.current) {
       const width = boxRef.current.clientWidth;
       boxRef.current.scrollLeft += width;
-      console.log(width);
+
     }
   }
 

@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .video-container {
   display: flex;
   flex-direction: column;
@@ -8,6 +12,7 @@
   height: 225px;
   width: 212px;
   margin: 1vw;
+  gap: 5px;
 }
 .video-container .rounded-image-container {
   overflow: hidden;

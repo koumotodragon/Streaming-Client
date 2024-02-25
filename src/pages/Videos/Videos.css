@@ -1,0 +1,25 @@
+body {
+  background-color: #000000;
+}
+
+.App-header {
+  background-color: #000000;
+
+  .navbar {
+    border-top: 0px;
+    background-color: #000000;
+    border-bottom-width: 1px;
+    border-block-style: solid;
+    border-bottom-color: rgb(48 48 48/1);
+  }
+
+}
+
+.main-cotainer {
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 1440px;
+}
+
+/*# sourceMappingURL=Videos.css.map */
