@@ -1,3 +1,3 @@
-import { Home } from "../pages";
+import { Home, Videos } from "../pages";
 
-export const Public = [{ path: "/", element: Home }];
+export const Public = [{ path: "/", element: Home }, { path: '/videos', element: Videos }];

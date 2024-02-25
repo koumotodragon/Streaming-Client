@@ -3,7 +3,7 @@ import "./Header.css"
 import logo from '../../assets/logo_ws_horizontal.png'
 import logoProfile from '../../assets/icon_profile.png'
 import iconFacebook from '../../assets/icon_facebook.svg'
-
+import { NavLink } from 'react-router-dom'
 const menu = [
     {
         id: 1,
@@ -59,9 +59,9 @@ export const Header = () => {
             <nav className="navbar">
                 <div className="header-left">
                     <div className="nav-logo">
-                        <a href="#">
+                        <NavLink to="/">
                             <img src={logo} alt="" />
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="nav-menu">
                         <ul>
